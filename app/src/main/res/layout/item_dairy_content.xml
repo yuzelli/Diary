@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+   >
+
+    <ImageView
+        android:id="@+id/img_title"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="10dp"
+        android:src="@mipmap/ic_launcher"/>
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_toRightOf="@+id/img_title"
+        android:textSize="18sp"
+        android:layout_marginStart="10dp"
+        android:gravity="bottom"
+        android:text="生生世世"/>
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="20170101"
+        android:layout_toRightOf="@+id/img_title"
+        android:layout_marginStart="10dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="top"/>
+    <TextView
+        android:id="@+id/tv_weather"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="wwwww"
+        android:layout_toRightOf="@+id/tv_time"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+        />
+
+
+</RelativeLayout>

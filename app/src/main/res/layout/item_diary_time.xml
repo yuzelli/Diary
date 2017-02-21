@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+   >
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerVertical="true"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:text="20170101"/>
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/tv_time"
+
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:text="sssss"/>
+    <TextView
+        android:id="@+id/tv_weather"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/tv_title"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:layout_marginStart="10dp"
+        android:text="ssss"/>
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/tv_time"
+        android:layout_alignParentBottom="true"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:text="sssssssss"
+        android:gravity="bottom"
+        android:layout_marginBottom="10dp"
+        android:lines="1"/>
+
+</RelativeLayout>

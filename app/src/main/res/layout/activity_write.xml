@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_write"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+    <RelativeLayout
+        android:id="@+id/rl_top"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/yellow">
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/ic_left_arrow" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="搜索"
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/tv_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            android:text="保存"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rl_diaryTitle"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/rl_top">
+        <TextView
+            android:id="@+id/tv_diaryTitle"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:text="标题："/>
+        <EditText
+            android:id="@+id/et_diaryTitle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:lines="1"
+            android:layout_margin="2dp"
+            android:background="@drawable/bg_et_shape"
+            android:layout_toRightOf="@+id/tv_diaryTitle"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rl_time"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/rl_diaryTitle">
+        <TextView
+            android:id="@+id/tv_diaryTime"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:text="时间："/>
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:lines="1"
+            android:layout_margin="2dp"
+            android:gravity="center"
+            android:layout_toRightOf="@+id/tv_diaryTime"/>
+        <TextView
+            android:id="@+id/tv_w"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_centerVertical="true"
+            android:layout_centerInParent="true"
+            android:text="时间："/>
+        <TextView
+            android:id="@+id/tv_weather"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:lines="1"
+            android:layout_margin="2dp"
+            android:gravity="center"
+            android:layout_toRightOf="@+id/tv_w"/>
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/et_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_et_shape"
+       android:layout_margin="10dp"
+        android:layout_below="@+id/rl_time"
+        android:layout_alignParentStart="true" />
+
+
+</RelativeLayout>
